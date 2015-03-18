@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-  db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+  //db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/mean-dev',
+  db: 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || '192.168.33.10') + '/mean-dev',
   debug: true,
   //  aggregate: 'whatever that is not false, because boolean false value turns aggregation off', //false
   aggregate: false,
